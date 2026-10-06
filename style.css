@@ -545,3 +545,44 @@ button:focus-visible {
   font-size: 13px;
   color: #94A3B8;
 }
+
+.lien-evitement {
+  position: absolute;
+  top: -50px;
+  left: 16px;
+  padding: 8px 12px;
+  background: #FF6B2C;
+  color: #FFFFFF;
+}
+
+.lien-evitement:focus { 
+  top: 16px; 
+}
+
+.contact-contenu { 
+  align-items: flex-start; 
+}
+.contact-infos, .formulaire-contact { 
+  padding: 24px; 
+}
+.contact-ligne { 
+  display: flex;
+  gap: 12px;
+   margin: 20px 0;
+}
+.contact-ligne img {
+  width: 24px;
+  height: 24px;
+}
+.formulaire-contact label {
+  display: block;
+  margin-top: 16px;
+}
+.formulaire-contact input, .formulaire-contact select, .formulaire-contact textarea {
+  width: 100%; 
+  padding: 10px; 
+  font: inherit;
+}
+.formulaire-contact button { 
+  margin-top: 20px; 
+}
