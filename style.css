@@ -586,3 +586,37 @@ button:focus-visible {
 .formulaire-contact button { 
   margin-top: 20px; 
 }
+
+@media (max-width: 767px) {
+  .en-tete-contenu, .hero-contenu, .apropos-contenu, .cartes, .contact-contenu, .pied-haut, .pied-bas { 
+    flex-direction: column; 
+  }
+  .en-tete-contenu { 
+    height: auto; 
+    gap: 16px; 
+    padding-top: 16px; 
+    padding-bottom: 16px; 
+  }
+  .menu { 
+    gap: 16px; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+  }
+  .hero-image, .apropos-image { 
+    width: 100%; 
+    height: 280px; 
+  }
+  .chiffres { 
+    flex-direction: column; 
+    gap: 16px; 
+  }
+  .chiffre + .chiffre { 
+    border-left: 0;
+   }
+  .cartes {
+    gap: 20px; 
+  }
+  .carte { 
+    width: 100%; 
+  }
+}
