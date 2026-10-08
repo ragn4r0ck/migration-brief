@@ -220,6 +220,10 @@ button:focus-visible {
   border-bottom-color: #FF6B2C;
 }
 
+.bouton-menu {
+  display: none;
+}
+
 .hero {
   padding: 64px 0 96px;
 }
@@ -602,15 +606,39 @@ button:focus-visible {
     flex-direction: column; 
   }
   .en-tete-contenu { 
-    height: auto; 
-    gap: 16px; 
+    height: 72px;
+    flex-direction: row;
+    gap: 0;
     padding-top: 16px; 
     padding-bottom: 16px; 
   }
-  .menu { 
-    gap: 16px; 
-    flex-wrap: wrap; 
-    justify-content: center; 
+  .bouton-menu {
+    display: block;
+    padding: 8px 12px;
+    height: 44px;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #0F1B2D;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .en-tete-contenu nav {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    padding: 12px 24px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E5E7EB;
+  }
+  .en-tete-contenu nav.menu-ouvert {
+    display: block;
+  }
+  .menu {
+    flex-direction: column;
+    gap: 12px;
   }
   .hero-image, .apropos-image { 
     width: 100%; 
